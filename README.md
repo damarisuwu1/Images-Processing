@@ -50,7 +50,7 @@ This will:
 - **Log execution time in the TIMES file.**
 
 ## Project Structure
-
+```bash
 image-processing-filters/
 │── Input/                # Folder containing the original images
 │── Output/               # Processed images stored here
@@ -59,4 +59,12 @@ image-processing-filters/
 │── setup.py              # Script to compile Cython modules
 │── TIMES                 # Execution time log
 │── README.md             # Project documentation
+```
 
+## Implementation Details
+The **Median Filter** is used to remove noise while preserving edges by replacing each pixel with the median of its neighborhood.
+
+## **Notes**
+- Ensure that the Input/ folder contains grayscale images before running the filter.
+- The Output/ folder stores the processed images after filtering.
+- Modify kernel sizes and parameters inside the script to experiment with different filter strengths.
