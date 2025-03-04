@@ -56,9 +56,11 @@ image-processing-filters/
 │── Output/               # Processed images stored here
 │── median_filter.pyx     # Cython implementation of the Median Filter
 │── numpy_cython.py       # Runs Median Filter with Cython
+│── pure_python.py        # Pure Python implementation
+│── numpy_median.py       #NumPy implementation 
 │── setup.py              # Script to compile Cython modules
+│── results.ipynb         # Jupyter Notebook for performance analysis
 │── TIMES                 # Execution time log
-│── README.md             # Project documentation
 ```
 
 ## Implementation Details
