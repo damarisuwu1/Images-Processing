@@ -18,3 +18,45 @@ This project evaluates the trade-off between execution time and image quality fo
     - **Sobel Filter**: An edge detection filter that highlights the gradient of intensity changes in an imag
     - **Median Filter**: A non-linear filter that replaces each pixel with the median value of neighboring pixels
 - **Performance Analysis**: Execution time and image quality comparison for each filter implementation
+
+## Team Members
+- Diego Monroy Minero
+- Damaris Yuselin Dzul Uc
+- Gerardo Hernandez Widman
+
+## Installation
+To run this project, follow these steps:
+
+### 1. **Clone the Repository**
+### 2. **Install Dependencies**
+### 3. **Compile Cython Modules**
+For optimized performance, you need to compile the Cython module:
+
+```bash
+python setup.py build_ext --inplace
+```
+
+## Usage Instructions
+### Running the Median Filter
+To apply the Median Filter with different implementations, run:
+```bash
+python numpy_cython.py
+```
+This will:
+
+- **Load an image from Input/original.jpg.**
+- **Apply the median filter using the Cython implementation.**
+- **Save the output in Output/median_filtered_image_cython.jpg.**
+- **Log execution time in the TIMES file.**
+
+## Project Structure
+
+image-processing-filters/
+│── Input/                # Folder containing the original images
+│── Output/               # Processed images stored here
+│── median_filter.pyx     # Cython implementation of the Median Filter
+│── numpy_cython.py       # Runs Median Filter with Cython
+│── setup.py              # Script to compile Cython modules
+│── TIMES                 # Execution time log
+│── README.md             # Project documentation
+
