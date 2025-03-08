@@ -36,14 +36,58 @@ For optimized performance, you need to compile the Cython module:
 python setup.py build_ext --inplace
 ```
 ### Running the Gaussian Filter
-
 ## Execution
+To apply the Gaussian Filter with different implementations, run:
 
-## 1. Pure Python Implementation
+### 1. Pure Python Implementation  
 
-Run the following command:
+Run the following command:  
+```bash
+python Scripts/pure_python.py
+```  
+
+### 2. NumPy Implementation  
+
+Run:  
+```bash
+python Scripts/only_numpy.py
+```  
+
+### 3. Cython + NumPy Implementation  
+
+``` bash
+python __main__.py
 ```
-Run the following
+This will:
+
+   - **Load images from Files/Input/.**
+   - **Apply the Gaussian filter using Pure Python, NumPy, and Cython implementations.**
+   - **Save the processed images in Files/Output/.**
+   - **Log execution time in the terminal.**
+
+## Project Structure
+```bash
+image-processing-filters/
+│── gaussian/
+│   │── Files/
+│   │   │── Input/                 # Folder containing the original images
+│   │   │── Output/                # Processed images stored here
+│   │── Scripts/
+│   │   │── pure_python.py         # Pure Python implementation of the Gaussian Filter
+│   │   │── only_numpy.py          # NumPy implementation of the Gaussian Filter
+│   │   │── Cython/
+│   │   │   │── numpy_cython.pyx   # Cython implementation of the Gaussian Filter
+│   │── __main__.py                # Runs Gaussian Filter using all implementations
+│   │── setup.py                   # Script to compile Cython modules
+│   │── Resultados.ipynb           # Jupyter Notebook for performance analysis
+│   │── README.md                  # Project documentation
+```
+## Performance Analysis
+Execution times can be analyzed using the Jupyter notebook (Resultados.ipynb) or by running:
+```bash
+python __main__.py
+```
+
 ---
 
 ## Usage Instructions
