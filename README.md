@@ -35,9 +35,10 @@ For optimized performance, you need to compile the Cython module:
 ```bash
 python setup.py build_ext --inplace
 ```
-### Running the Gaussian Filter
-## Execution
+## Running the Gaussian Filter
 To apply the Gaussian Filter with different implementations, run:
+
+### Execution
 
 ### 1. Pure Python Implementation  
 
@@ -80,7 +81,6 @@ image-processing-filters/
 │   │── __main__.py                # Runs Gaussian Filter using all implementations
 │   │── setup.py                   # Script to compile Cython modules
 │   │── Resultados.ipynb           # Jupyter Notebook for performance analysis
-│   │── README.md                  # Project documentation
 ```
 ## Performance Analysis
 Execution times can be analyzed using the Jupyter notebook (Resultados.ipynb) or by running:
@@ -91,10 +91,10 @@ python __main__.py
 ---
 
 ## Usage Instructions
-### Running the Median Filter
+## Running the Median Filter
 To apply the Median Filter with different implementations, run:
 
-## Execution  
+### Execution  
 
 ### 1. Pure Python Implementation  
 
